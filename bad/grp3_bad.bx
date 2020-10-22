@@ -1,0 +1,9 @@
+// Contributed: Benjamin Montagnes, Antonin Wattel
+// Date: 2020/10/16
+// Git hash: 156e88c717285912a4aa1bc662602dc1f0c73b87
+
+// calling a function that does not exist
+
+proc main() {
+    fib(10);
+}
