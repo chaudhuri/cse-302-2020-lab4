@@ -1,0 +1,16 @@
+// Contributed: Ashish Nayak, Xingjian Zhang
+// Date: 2020/10/14
+// Git hash: 392d54c1deda06a5f91f083663de16756465dd1f
+
+// scopes and duplication
+
+proc main() {
+    var x = 1 : int;
+    {
+        var x = 2 : int;
+        {
+            var x = 3 : int;
+            var x = 4 : int;
+        }
+    }
+}
