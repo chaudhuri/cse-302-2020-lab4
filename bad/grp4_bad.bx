@@ -1,0 +1,17 @@
+// Contributed: Noah Sarfati, Joshua Paul Jacob
+// Date: 2020/10/16
+// Git hash: fdd816b61a024f34d43f9f6ab258ac25d5ef99a4
+
+// multiple returns
+// Authors: Joshua & Noah
+
+proc get_one() : int{
+    return 1;
+    return 2;
+}
+
+proc main() {
+    var answer = 0 : int;
+    answer = get_one();
+    print(answer);
+}
