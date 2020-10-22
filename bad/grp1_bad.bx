@@ -1,0 +1,59 @@
+// Contributed: Sunho Hwang, Tarcisio Soares, Diego Gomez
+// Date: 2020/10/15
+// Git hash: 94ff404144c63ee0f49a1939416059defe5d9d1d
+
+var i = 0 : int;
+var c = false : bool;
+proc recurrence(n:int) : int{
+    if (n == 0){
+        return 42;
+    }
+    else{
+        if (n%2 == 0) {
+            return 10 * recurrence(n-1);
+        }
+        else{
+            return recurrence(n-1);
+        }
+    }
+}
+
+proc print_number(){
+    print(10001100100);
+}
+
+proc messy_nest(condition:bool) : bool {
+    if (condition){
+        if (condition){
+            if(condition){
+                if(condition){
+                    return condition;
+                }
+                else{
+                    return false;
+                }
+            }
+            else{
+                return true;
+            }
+        }
+        else{
+            return false;
+        }
+    }
+    else{
+        return messy_nest(!condition);
+    }
+}
+
+
+proc main() {
+  while (i < 10) {
+    print(recurrence(i));
+    i = i + 1;
+    }
+    print_number();
+    print(messy_nest(c));
+}
+
+
