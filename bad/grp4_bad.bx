@@ -2,6 +2,11 @@
 // Date: 2020/10/16
 // Git hash: fdd816b61a024f34d43f9f6ab258ac25d5ef99a4
 
+// Instructor's note: this test is not actually supposed to fail.
+// Multiple returns are OK. The second return is just dead code.
+
+// -----------------------------------------------------------------------------
+
 // multiple returns
 // Authors: Joshua & Noah
 
